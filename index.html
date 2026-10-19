@@ -1,12 +1,223 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Cloud Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA | Explore the Future</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b14;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #101525;
+            border-bottom: 1px solid #222b40;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #00e5ff;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: radial-gradient(
+                circle at top,
+                #17294a 0%,
+                #080b14 65%
+            );
+        }
+
+        .tag {
+            color: #00e5ff;
+            border: 1px solid #00e5ff;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 8vw, 76px);
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #00e5ff;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #aab5cc;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 28px;
+            background: #00e5ff;
+            color: #080b14;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        .features {
+            padding: 45px 8%;
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(200px, 1fr)
+            );
+            gap: 20px;
+        }
+
+        .card {
+            background: #111827;
+            border: 1px solid #253149;
+            border-radius: 12px;
+            padding: 28px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #00e5ff;
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #00e5ff;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aab5cc;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #222b40;
+            color: #8994aa;
+            font-size: 13px;
+        }
+
+        @media (max-width: 500px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <h2>My Cloud Computing Journey</h2>
-    <p>My first website is working!</p>
+
+    <header>
+        <div class="logo">NEXORA</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#explore">Explore</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="tag">WELCOME TO THE FUTURE</div>
+
+        <h1>Explore the <span>Future.</span></h1>
+
+        <p>
+            Discover the world of technology, Artificial
+            Intelligence and Cloud Computing.
+            Your next digital journey starts here.
+        </p>
+
+        <a class="button" href="#explore">
+            Discover More →
+        </a>
+    </section>
+
+    <section class="features" id="explore">
+
+        <div class="card">
+            <h2>Artificial Intelligence</h2>
+            <p>
+                Explore AI technologies and discover
+                how intelligent systems are changing our world.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Cloud Computing</h2>
+            <p>
+                Learn about servers, cloud platforms,
+                websites and the technology behind the internet.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Future Technology</h2>
+            <p>
+                Discover exciting innovations,
+                digital tools and emerging technologies.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 NEXORA. Explore Beyond Limits.
+    </footer>
+
 </body>
 </html>
